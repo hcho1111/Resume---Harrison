@@ -101,20 +101,20 @@
 % ---
 
 % DOCUMENT MAIN
-\begin{document}
+ \begin{document}
 
 % For Dark theme also un-comment this line:
 \pagecolor{backgroundcolor}
 
 % HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Harrison Cho} &  \href{https://www.linkedin.com/in/harrison-cho-994498146/}{ \faicon{linkedin} \color{urlcolor} harrison}\href{https://github.com/hcho1111}{ \faicon{github} \color{urlcolor} hcho1111}\\
+  \textbf{\huge Harrison Cho} &  \href{https://www.linkedin.com/in/harrison-cho-994498146/}{ \faicon{linkedin} \color{urlcolor} harrison     }\href{https://github.com/hcho1111}{ \faicon{github} \color{urlcolor} hcho1111}\\
   \href{mailto:harrison_cho@brown.edu}{harrison$\_$cho@brown.edu} &  \textsl{\small \otherThemeRef}\\
-  {}&\faicon{code} \LaTeX\\
+%   {}&\faicon{code} \LaTeX\\ 
   
 \end{tabular*}
 % ---
-\vspace{-0.4cm}
+\vspace{0.1cm}
 % EDUCATION
 \section{Education}
 \vspace{-0.35cm}
@@ -129,27 +129,43 @@
       \vspace{-0.3cm}
     \resumeSubheading
       {University of North Carolina - Chapel Hill}{Chapel Hill, North Carolina}
-      {BS in Economics with Highest Distinction and Honors - GPA: 3.88}{August 2016 -- December 2020}
+      {BS: Economics, Minor: Statistics, Highest Distinction and Honors - GPA: 3.88}{August 2016 -- December 2020}
       \resumeItemListStart
-      \resumeItem{Minors: Business Administration and Statistics}
-      \resumeItem{Relevant Coursework: Strategic Management, Principles of Marketing, Operations Management, Data Analysis Methods, Advanced Econometrics, Discrete Mathematics, Multivariable Calculus, Linear Algebra }
-       \resumeItem{Thesis: \textit{The Effects of Socioeconomic Characteristics on Ambient Air Pollution and the Decision to Over Pollute}}
-       \resumeItem{Awards: Phi Beta Kappa, Phillips Ambassador Scholar, Kakehashi Project Representative}
+      \resumeItem{Relevant Coursework: Data Analysis Methods, Optimization, Advanced Econometrics, Linear Algebra, Calculus Series}
+      \resumeItem{Accolades: Phi Beta Kappa, Phillips Ambassador Scholar, Kakehashi Project Representative}
+      \resumeItem{Thesis: \textit{The Effects of Socioeconomic Characteristics on Ambient Air Pollution and the Decision to Over Pollute}}
+       
+
       \resumeItemListEnd
   \resumeSubHeadingListEnd
  % ---
  \vspace{-0.6cm}
- 
+ % PROGRAMMING SKILLS
+
+\section{Skills}
+
+  \resumeSubHeadingListStart
+  
+   \resumeSubItem{\textbf{Languages:} Python (scikit-learn, pandas, TensorFlow, Dask), R (caret, kernlab, shiny), Julia}
+  
+  \resumeSubItem{\textbf{Tools/Technologies:} SQL (PostgreSQL \& MySQL), PySpark, Neo4J} 
+  
+  \resumeSubItem{\textbf{Other Languages:} STATA, Excel, Mathematica, \LaTeX}
+  
+  \resumeSubItem{\textbf{In Progress:} NLP in python, web scraping in python, GraphQL, MongoDB, Kafka}
+  \resumeSubHeadingListEnd
+  
+ \vspace{-0.55cm}
  % EXPERIENCE
 \section{Relevant Experience}
 \vspace{-0.4cm}
   \resumeSubHeadingListStart
   \resumeSubheading
       {Watson Institute for International and Public Affairs}{Providence, RI}
-      {Machine Learning Research Assistant}{January 2022 - Present}
+      {Data Science Research Assistant}{January 2022 - Present}
       \resumeItemListStart
-      \resumeItem{Refining data provenance techniques to engineer additional spatial and socioeconomic data related to fatal police encounters in the US}
-      \resumeItem{Assessing statistical approaches analyzing the significance of socioeconomic factors linked to fatal police encounters}
+      \resumeItem{Refining data provenance techniques to engineer additional spatial and socioeconomic features related to fatal police encounters in the US}
+      \resumeItem{Engineering a python script to scrape census block group data from the Census Buearau's ACS-5 API given police violence victim residency data}
       \resumeItemListEnd
       
 \vspace{-0.35cm}
@@ -158,8 +174,8 @@
       {University of North Carolina - Chapel Hill Economics Department}{Chapel Hill, NC}
       {Research Assistant}{December 2020 - April 2021}
       \resumeItemListStart
-      \resumeItem{Researched Monte Carlo simulation, supervised learning techniques, and casual inference conditions in econometric machine learning models}
-      \resumeItem{Implemented machine learning models in scikit-learn and deep learning models in TensorFlow to test the effects of socioeconomic variables on supermarket sales data}
+      \resumeItem{Researched Monte Carlo simulation, supervised learning techniques, and casual inference conditions in econometric machine learning models to assist literature review efforts}
+      \resumeItem{Implemented three machine learning models in scikit-learn and a sequential model in TensorFlow to simulate causal inference techniques for supermarket sales data}
       \resumeItemListEnd
       
 \vspace{-0.35cm}
@@ -168,9 +184,9 @@
       {Jet Aviation Business Jets}{Hong Kong}
       {Operations Intern}{June 2018 - August 2018}
       \resumeItemListStart
-      \resumeItem{Authored a process manual outlining unique value streams and risk mitigation protocols in daily operations to accommodate leaner management practices during a transition period}
+      \resumeItem{Authored a process manual outlining unique value streams and risk mitigation protocols in daily operations to accommodate a transitioning senior management team}
       \resumeItem{Established client-facing interaction protocols to improve retention of high net worth accounts while
-maintaining critical quality and safety standards}
+maintaining critical quality and safety standards for private pilots}
       \resumeItemListEnd
       
 \resumeSubHeadingListEnd
@@ -182,18 +198,16 @@ maintaining critical quality and safety standards}
 \resumeSubHeadingListStart
     \resumeSubheading
      {\href{https://github.com/hcho1111/Parking-Data-Violations}{Spatiotemporal Approaches for Classifying Parking Violations}}{Fall 2021}
-     {}{}
-    \vspace{-0.75cm}
+     {Python: scikit-learn, Requests, Plotly; API: NYC Geoclient}{}
      \resumeItemListStart
-     \resumeItem{Developed a complete, reproducible ML pipeline via scikit-Learn for classifying 100 unique parking violation categories designated by NYC's Department of Finance. Coupled preexisting geolocation features and NYC's official Geoclient API to engineer coordinate data}
+     \resumeItem{Developed a complete, reproducible ML pipeline via scikit-Learn for classifying 100 unique parking violation categories designated by NYC's Department of Finance. Coupled preexisting geolocation features and NYC's official Geoclient API to engineer granular coordinate data}
      %\resumeItem{See dynamic visualization of the project \textbit{\textbf{here}}}
      \resumeItemListEnd
     
 \vspace{-0.3cm}
     \resumeSubheading
      {\href{https://github.com/hcho1111/Darknet-Drug-Listing-Classification}{NLP Classification for Dark Web Narcotics Listings}}{Fall 2020}
-     {}{}
-     \vspace{-0.75cm}
+     {R: quanteda, caret, dplyr, ggplot2}{}
      \resumeItemListStart
      \resumeItem{Employed natural language processing techniques to classify clandestine product listings on pre-scraped dark web marketplace data. Researched deep learning techniques to construct a feed-forward neural network, achieving an accuracy score 37\% above a standard machine learning model baseline}
      \resumeItemListEnd
@@ -203,8 +217,6 @@ maintaining critical quality and safety standards}
   \resumeSubHeadingListEnd
 % ---
 % ---
-\vspace{-0.6cm}
-
 
 
 
@@ -228,23 +240,7 @@ maintaining critical quality and safety standards}
 % \resumeSubHeadingListEnd
 % ---
 
-% PROGRAMMING SKILLS
 
-\section{Libraries, Frameworks, and Technical Skills}
-
-  \resumeSubHeadingListStart
-  
-    \resumeSubItem{\textbf{Python:} xgboost, scikit-learn, pandas, scipy, tensorflow, dask}
- 
-  
-  \resumeSubItem{\textbf{R:} caret, kernlab, dplyr, ggplot, tidyr, shiny, plotly}
-  
-  \resumeSubItem{\textbf{Database Languages:} sql (postgresql \& mysql), pyspark, neo4j} 
-  
-  \resumeSubItem{\textbf{Other Languages/Modeling Software:} julia, stata, excel, mathematica}
-  
-  \resumeSubItem{\textbf{In Progress:} nlp in python, web scraping in python, graphql, mongodb, kafka}
-  \resumeSubHeadingListEnd
 
 % ---
 \end{document}

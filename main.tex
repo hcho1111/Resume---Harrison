@@ -84,19 +84,19 @@
 }
 
 %COLOR THEMES SELECTION
-% For Light theme un-comment this and comment the Dark theme section below
-\colorlet{urlcolor}{blue}
-\newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{See dark theme}}
-\newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{Get Latest version}}
+%For Light theme un-comment this and comment the Dark theme section below
+% \colorlet{urlcolor}{blue}
+% \newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{See dark theme}}
+% \newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{Get Latest version}}
 
 % For Dark theme un-comment this and comment the Light theme section above
 
 \colorlet{textcolor}{white!80!gray}
-%\colorlet{backgroundcolor}{black!30!gray}
-%\colorlet{urlcolor}{blue!25!white}
-%\AtBeginDocument{\color{textcolor}}
-%\newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{See light theme}}
-%\newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{Get Latest version}}
+\colorlet{backgroundcolor}{black!30!gray}
+\colorlet{urlcolor}{blue!25!white}
+\AtBeginDocument{\color{textcolor}}
+\newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{See light theme}}
+\newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{Get Latest version}}
 
 % ---
 
@@ -104,8 +104,7 @@
  \begin{document}
 
 % For Dark theme also un-comment this line:
-
-% \pagecolor{backgroundcolor}
+\pagecolor{backgroundcolor}
 
 % HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -147,9 +146,9 @@
 
   \resumeSubHeadingListStart
   
-   \resumeSubItem{\textbf{Languages:} Python (scikit-learn, PySpark, TensorFlow, PyTorch, Dask), R (caret, kernlab, shiny), SQL (PostgreSQL \&  MySQL) Julia, D3.js}
+   \resumeSubItem{\textbf{Languages:} Python (scikit-learn, PySpark, TensorFlow, Keras, PyTorch, OpenCV, Dask), R (caret, kernlab, shiny), SQL (PostgreSQL \&  MySQL) Julia, D3.js}
   
-  \resumeSubItem{\textbf{Other Tools:} Git, GraphQL, STATA, Excel, Mathematica, \LaTeX}
+  \resumeSubItem{\textbf{Other Tools:} Git, Google Cloud Platform, GraphQL, STATA, Excel, Mathematica, \LaTeX}
  
   \resumeSubHeadingListEnd
   
@@ -163,7 +162,7 @@
       {Brown University Data Science Initiative}{Providence, RI}
       {Quantitative Research Intern}{May 2022 - Present}
       \resumeItemListStart
-      \resumeItem{Formulating a dynamic cryptocurrency asset pricing model utilizing an ensemble of Machine Learning techniques including, but not limited to: Autoregressive Methods, Hidden Markov Models, CNNs, RNNs, and Transformers} 
+      \resumeItem{Formulating a dynamic cryptocurrency asset pricing model utilizing an ensemble of Machine Learning techniques including, but not limited to: ARIMA + GARCH, Hidden Markov Models, CNNs, RNNs, and Transformers} 
       \resumeItem{Mapping, constructing, and analyzing technical indicators engineered from scraped equities, derivatives, and cryptocurrency time series}
     \resumeItemListEnd
     
@@ -197,19 +196,23 @@
 \vspace{-0.4cm}
 \resumeSubHeadingListStart
     \resumeSubheading
-     {\href{https://github.com/hcho1111/Parking-Data-Violations}{Spatiotemporal Approaches for Classifying Parking Violations}}{Fall 2021}
-     {Python: scikit-learn, Requests, Plotly; API: NYC Geoclient}{}
+     {\href{}{Neural Style Transfer for Algorithmically Generated Camouflage}}{Spring 2022}
+     {Python: TensorFlow, Keras, OpenCV; Cloud Services: Google Cloud Platform}{}
      \resumeItemListStart
-     \resumeItem{Developed a complete, reproducible ML pipeline via scikit-Learn for classifying 100 unique parking violation categories designated by NYC's Department of Finance. Coupled preexisting geolocation features and NYC's official Geoclient API to engineer granular coordinate data}
+      \resumeItem{Assembled a cloud-based CycleGAN to generate camouflage patterns from 90,000 natural-landscape images. Two additional computer vision models were incorporated with the deep style transfer model for image preprocessing (removal of image watermarks) and feature detection (removal of irrelevant sky-based features)}
      %\resumeItem{See dynamic visualization of the project \textbit{\textbf{here}}}
      \resumeItemListEnd
     
 \vspace{-0.3cm}
     \resumeSubheading
-     {\href{https://github.com/hcho1111/Darknet-Drug-Listing-Classification}{NLP Classification for Dark Web Narcotics Listings}}{Fall 2020}
-     {R: quanteda, caret, dplyr, ggplot2}{}
+    {\href{https://github.com/hcho1111/Parking-Data-Violations}{Spatiotemporal Approaches for Classifying Parking Violations}}{Fall 2021}
+     {Python: scikit-learn, Requests, Plotly; API: NYC Geoclient}{}
      \resumeItemListStart
-     \resumeItem{Employed natural language processing techniques to classify clandestine product listings on pre-scraped dark web marketplace data. Researched deep learning techniques to construct a feed-forward neural network, achieving an accuracy score 37\% above a standard machine learning model baseline}
+     \resumeItem{Developed a complete, reproducible ML pipeline via scikit-Learn for classifying 100 unique parking violation categories designated by NYC's Department of Finance. Coupled preexisting geolocation features and NYC's official Geoclient API to engineer granular coordinate data}
+    %  {\href{https://github.com/hcho1111/Darknet-Drug-Listing-Classification}{NLP Classification for Dark Web Narcotics Listings}}{Fall 2020}
+    %  {R: quanteda, caret, dplyr, ggplot2}{}
+    %  \resumeItemListStart
+    %  \resumeItem{Employed natural language processing techniques to classify clandestine product listings on pre-scraped dark web marketplace data. Researched deep learning techniques to construct a feed-forward neural network, achieving an accuracy score 37\% above a standard machine learning model baseline}
      \resumeItemListEnd
      
 % \resumeTech{Technologies}{R.}

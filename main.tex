@@ -84,19 +84,19 @@
 }
 
 %COLOR THEMES SELECTION
-%For Light theme un-comment this and comment the Dark theme section below
-% \colorlet{urlcolor}{blue}
-% \newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{See dark theme}}
-% \newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{Get Latest version}}
+% For Light theme un-comment this and comment the Dark theme section below
+\colorlet{urlcolor}{blue}
+\newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{See dark theme}}
+\newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{Get Latest version}}
 
 % For Dark theme un-comment this and comment the Light theme section above
 
-\colorlet{textcolor}{white!80!gray}
-\colorlet{backgroundcolor}{black!30!gray}
-\colorlet{urlcolor}{blue!25!white}
-\AtBeginDocument{\color{textcolor}}
-\newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{See light theme}}
-\newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{Get Latest version}}
+% \colorlet{textcolor}{white!80!gray}
+% \colorlet{backgroundcolor}{black!30!gray}
+% \colorlet{urlcolor}{blue!25!white}
+% \AtBeginDocument{\color{textcolor}}
+% \newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{See light theme}}
+% \newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{Get Latest version}}
 
 % ---
 
@@ -104,12 +104,15 @@
  \begin{document}
 
 % For Dark theme also un-comment this line:
-\pagecolor{backgroundcolor}
+% \pagecolor{backgroundcolor}
 
 % HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\huge Harrison Cho} &  \href{https://www.linkedin.com/in/harrison-cho-994498146/}{ \faicon{linkedin} \color{urlcolor} harrison     }\href{https://github.com/hcho1111}{ \faicon{github} \color{urlcolor} hcho1111}\\
-  \href{mailto:harrison_cho@brown.edu}{harrison$\_$cho@brown.edu} &  \textsl{\small \otherThemeRef}\\
+  \href{mailto:harrison_cho@brown.edu}{harrison$\_$cho@brown.edu} &  \href{https://hcho1111.github.io/}{\faicon{code} \color{urlcolor} hcho1111.github.io} 
+  \\
+    \textsl{} & \textsl{\small \otherThemeRef}
+  \\
 %   {}&\faicon{code} \LaTeX\\ 
   
 \end{tabular*}
@@ -163,7 +166,7 @@
       {Quantitative Research Intern}{May 2022 - Present}
       \resumeItemListStart
       \resumeItem{Formulated a dynamic cryptocurrency asset pricing model and trading strategy utilizing an ensemble of Machine Learning techniques including, but not limited to: ARIMA + GARCH autoregressive methods, Bayesian Models, CNNs, RNNs (GRUs and LSTMs), and Transformers } 
-      \resumeItem{Before fine tuning practices, our trading strategy achieved a theoretical profit of approximately \$60,000 USD during a Bearish, volatile market regime}
+      \resumeItem{Before fine tuning practices, our trading strategy achieved a theoretical profit of approximately \$60,000 USD during a bearish, volatile market regime}
     \resumeItemListEnd
     
     

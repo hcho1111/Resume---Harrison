@@ -85,18 +85,18 @@
 
 %COLOR THEMES SELECTION
 % For Light theme un-comment this and comment the Dark theme section below
-\colorlet{urlcolor}{blue}
-\newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{See dark theme}}
-\newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{Get Latest version}}
+% \colorlet{urlcolor}{blue}
+% \newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{See dark theme}}
+% \newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{Get Latest version}}
 
 % For Dark theme un-comment this and comment the Light theme section above
 
-% \colorlet{textcolor}{white!80!gray}
-% \colorlet{backgroundcolor}{black!30!gray}
-% \colorlet{urlcolor}{blue!25!white}
-% \AtBeginDocument{\color{textcolor}}
-% \newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{See light theme}}
-% \newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{Get Latest version}}
+\colorlet{textcolor}{white!80!gray}
+\colorlet{backgroundcolor}{black!30!gray}
+\colorlet{urlcolor}{blue!25!white}
+\AtBeginDocument{\color{textcolor}}
+\newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{See light theme}}
+\newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{Get Latest version}}
 
 % ---
 
@@ -104,7 +104,7 @@
  \begin{document}
 
 % For Dark theme also un-comment this line:
-% \pagecolor{backgroundcolor}
+\pagecolor{backgroundcolor}
 
 % HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -149,9 +149,9 @@
 
   \resumeSubHeadingListStart
   
-   \resumeSubItem{\textbf{Languages:} Python (scikit-learn, PySpark, TensorFlow, Keras, PyTorch, OpenCV, Dask), R (caret, kernlab, shiny), SQL (PostgreSQL \&  MySQL) Julia, D3.js}
+   \resumeSubItem{\textbf{Languages:} Python (scikit-learn, PySpark, TensorFlow, Keras, PyTorch, OpenCV, PyMC), R (caret, kernlab, shiny), SQL (PostgreSQL \&  MySQL), Julia, D3.js}
   
-  \resumeSubItem{\textbf{Other Tools:} Git, Google Cloud Platform,  Tableau, GraphQL, HTML5, STATA, Excel, Mathematica, \LaTeX}
+  \resumeSubItem{\textbf{Other Tools:} Git, Google Cloud Platform, GraphQL, HTML5, STATA, Excel, Mathematica, \LaTeX}
  
   \resumeSubHeadingListEnd
   
@@ -162,8 +162,18 @@
   \resumeSubHeadingListStart
   
   \resumeSubheading
+      {Ploomber}{New York, NY}
+      {Software Engineering Intern}{September 2022 - Present}
+      \resumeItemListStart
+      \resumeItem{Maintained and improved the codebase of a YC-backed software company building modular MLOps tools and distributed computing solutions for Data Science teams}
+      \resumeItem{Authored a series of technical articles on causal inference modeling in PyMC, natural experiment designs for A/B testing, and deploying parallel Bayesian regression discontinuity design experiments in the cloud}
+      \resumeItemListEnd
+      
+      \vspace{-0.35cm}
+  
+  \resumeSubheading
       {Brown University Data Science Initiative}{Providence, RI}
-      {Quantitative Research Intern}{May 2022 - Present}
+      {Quantitative Research Intern}{May 2022 - September 2022}
       \resumeItemListStart
       \resumeItem{Formulated a dynamic cryptocurrency asset pricing model and trading strategy utilizing an ensemble of Machine Learning techniques including, but not limited to: ARIMA + GARCH autoregressive methods, Bayesian Models, CNNs, RNNs (GRUs and LSTMs), and Transformers } 
       \resumeItem{Before fine tuning practices, our trading strategy achieved a theoretical profit of approximately \$60,000 USD during a bearish, volatile market regime}
@@ -179,16 +189,6 @@
       \resumeItemListStart
       \resumeItem{Refined data preprocessing techniques to feature engineer geospatial and socioeconomic factors required to assess fatal police encounters in the US}
       \resumeItem{Engineered python scripts to automate data collection and entry practices, eliminating manual data validation per fatal encounter (approximately 30\% of the time allotted) and reallocating approximately 16.65\% of the total research budget}
-      \resumeItemListEnd
-      
-\vspace{-0.35cm}
-
-\resumeSubheading
-      {University of North Carolina - Chapel Hill Economics Department}{Chapel Hill, NC}
-      {Research Assistant}{December 2020 - April 2021}
-      \resumeItemListStart
-      \resumeItem{Consolidated literature relating to Monte Carlo simulation, supervised learning techniques, and casual inference conditions in econometric machine learning models to further case study analysis efforts}
-      \resumeItem{Implemented three machine learning models in scikit-learn and a sequential model in TensorFlow to simulate causal inference techniques for supermarket sales data}
       \resumeItemListEnd
       
 \resumeSubHeadingListEnd

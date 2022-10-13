@@ -85,18 +85,18 @@
 
 %COLOR THEMES SELECTION
 % For Light theme un-comment this and comment the Dark theme section below
-\colorlet{urlcolor}{blue}
-\newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{See dark theme}}
-\newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{Get Latest version}}
+% \colorlet{urlcolor}{blue}
+% \newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{See dark theme}}
+% \newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{Get Latest version}}
 
 % For Dark theme un-comment this and comment the Light theme section above
 
-% \colorlet{textcolor}{white!80!gray}
-% \colorlet{backgroundcolor}{black!30!gray}
-% \colorlet{urlcolor}{blue!25!white}
-% \AtBeginDocument{\color{textcolor}}
-% \newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{See light theme}}
-% \newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{Get Latest version}}
+\colorlet{textcolor}{white!80!gray}
+\colorlet{backgroundcolor}{black!30!gray}
+\colorlet{urlcolor}{blue!25!white}
+\AtBeginDocument{\color{textcolor}}
+\newcommand{\otherThemeRef}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_light_theme.pdf}{See light theme}}
+\newcommand{\latestVersion}{\href{https://github.com/hcho1111/resume/blob/main/harrison_cho_dark_theme.pdf}{Get Latest version}}
 
 % ---
 
@@ -104,7 +104,7 @@
  \begin{document}
 
 % For Dark theme also un-comment this line:
-% \pagecolor{backgroundcolor}
+\pagecolor{backgroundcolor}
 
 % HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -165,7 +165,7 @@
       {Ploomber}{New York, NY}
       {Software Engineering Intern}{September 2022 - Present}
       \resumeItemListStart
-      \resumeItem{Developed ML model visualization and evaluation tools for the \textit{sklearn-evaluation} package, adding new model comparison capabilities for uses in parallel and distributed computing environments}
+      \resumeItem{Designed visualization and evaluation tools for distributed ML models in the \textit{sklearn-evaluation} package, adding model comparison, model interpretability, and parallel experiment tracking features}
       \resumeItem{Authored a series of technical articles on causal inference modeling in \textit{PyMC}, natural experiment designs for A/B testing, and deploying parallel Bayesian regression discontinuity design experiments in the cloud}
       \resumeItemListEnd
       
@@ -211,7 +211,7 @@
     {\href{https://github.com/hcho1111/Parking-Data-Violations}{Spatiotemporal Approaches for Classifying Parking Violations}}{Fall 2021}
      {Python: scikit-learn, Requests, Plotly; API: NYC Geoclient}{}
      \resumeItemListStart
-     \resumeItem{Developed a complete, reproducible ML pipeline via scikit-Learn for classifying 100 unique parking violation categories designated by NYC's Department of Finance. Coupled preexisting geolocation features and NYC's official Geoclient API to engineer granular coordinate data}
+     \resumeItem{Developed a complete, reproducible ML pipeline via \textit{scikit-learn} for classifying 100 unique parking violation categories designated by NYC's Department of Finance. Coupled preexisting geolocation features and NYC's official Geoclient API to engineer granular coordinate data}
     %  {\href{https://github.com/hcho1111/Darknet-Drug-Listing-Classification}{NLP Classification for Dark Web Narcotics Listings}}{Fall 2020}
     %  {R: quanteda, caret, dplyr, ggplot2}{}
     %  \resumeItemListStart
